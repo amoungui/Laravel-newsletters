@@ -1,0 +1,24 @@
+{
+    "name": "scaffolder/newsletter",
+    "description": "this is the newsletter package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Amoungui Serge",
+        "email": "samoungui@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Scaffolder\\Newsletter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Scaffolder\\Newsletter\\NewsletterServiceProvider"
+            ]
+        }
+    }
+}
