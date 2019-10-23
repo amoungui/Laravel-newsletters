@@ -2,7 +2,7 @@
 
 namespace Scaffolder\Newsletter\Repositories;
 
-use Scaffolder\Newsletter\Models\newsletter;
+use Scaffolder\Newsletter\Models\Newsletter;
 
 /**
  * Description of NewsletterRepository
@@ -10,12 +10,11 @@ use Scaffolder\Newsletter\Models\newsletter;
  * @author Amoungui
  */
 class NewsletterRepository extends ResourceRepository{
-
-    public function __construct(newsletter $newsletter) {
+    public function __construct(Newsletter $newsletter) {
         $this->model = $newsletter;
     }
 
-    private function save(newsletter $newsletter, Array $inputs) {
+    private function save(Newsletter $newsletter, Array $inputs) {
         $newsletter->email = $inputs['email'];
 
         $newsletter->save();
@@ -28,4 +27,12 @@ class NewsletterRepository extends ResourceRepository{
 
         return $post;
     }    
+
+    private function queryPaginateWithOrder() {
+        return $this->model->orderBy('created_at', 'desc');		
+    }    
+
+    public function getWithNewsletterPaginate($n) {
+        return $this->queryPaginateWithOrder()->paginate($n);
+    }       
 }

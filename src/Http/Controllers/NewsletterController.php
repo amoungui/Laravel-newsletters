@@ -24,7 +24,7 @@ class NewsletterController extends Controller {
     }
 
     public function store(NewsletterRequest $request){
-        //Mail::to('abbc@abc.com')->send(new NewsletterMailable($request->email));
+        Mail::to('abbc@abc.com')->send(new NewsletterMailable($request->email));
 
         $this->NewsletterRepository->store($request->all());
 

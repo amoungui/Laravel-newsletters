@@ -8,13 +8,13 @@
 </head>
 <body>
     <div class="container">
-    <h1>Newsletter form</h1>
-    <form action="{{route('newsletter')}}" method="post">
-        <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-        </div>
-        <button type="submit" class="btn btn-primary">Send</button>
+        <h1>Newsletter form</h1>
+        <form action="{{route('newsletter')}}" method="post">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
         </form>
     </div>
 

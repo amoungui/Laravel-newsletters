@@ -16,7 +16,6 @@ abstract class ResourceRepository {
 
     abstract public function store (Array $inputs);
 
-
     public function getById($id) {
         return $this->model->findOrFail($id);
     }

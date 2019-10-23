@@ -15,7 +15,7 @@ class CreateNewslettersTable extends Migration
     {
         Schema::create('newsletters', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('email')->comment('User who add the message');
+            $table->string('email')->unique()->comment('User who add the message');
             $table->timestamps();
         });
     }
