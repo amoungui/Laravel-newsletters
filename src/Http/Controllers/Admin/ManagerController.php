@@ -75,7 +75,6 @@ class ManagerController extends Controller {
     public function edit($id){
         $data = $this->newsletterRepository->getById($id);
         return view('newsletter::Admin/edit', [
-            'id' => $id,
             'data' => $data
         ]);
     }

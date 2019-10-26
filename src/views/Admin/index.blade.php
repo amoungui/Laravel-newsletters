@@ -8,8 +8,8 @@
                     <h2>Manage <b>Newsletter</b></h2>
                 </div>
                 <div class="col-sm-6">
-                    <a href="{{route('store')}}" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Email</span></a>
-                    <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Send mail</span></a>						
+                    <a href="{{route('store')}}" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Add New Email</span></a>
+                    <a href="{{route('mail')}}" class="btn btn-danger" ><i class="fa fa-telegram" aria-hidden="true"></i> <span>Send mail</span></a>						
                 </div>
             </div>
         </div>
