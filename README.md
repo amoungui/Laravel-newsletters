@@ -8,7 +8,7 @@
 
 ### Installation ###
  
-Add Contact form to your composer.json file 
+Add Newsletter package to your composer.json file 
 ```
     composer require scaffolder/newsletter
 ```
