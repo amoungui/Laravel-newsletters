@@ -28,4 +28,4 @@ The next required step is to modify the config file to config/contact.php :
 ```
 Change the value of parameter: send_email_to, with your own admin adress
 
-Congratulations, you have successfully installed Amoungui !
+Congratulations, you have successfully installed Newsletter package !
